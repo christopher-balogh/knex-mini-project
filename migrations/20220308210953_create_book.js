@@ -6,8 +6,8 @@
   return knex.schema.createTable("books", (table) => {
     table.increments("id"); // adds an auto incrementing PK column
     table.string("title").notNullable();
-    table.integer("author_id").references("id").inTable("authors");
-    table.integer("subject_id").references("id").inTable("subjects");
+    table.integer("author_id").references("id").inTable("authors").onDelete("cascade");
+    table.integer("subject_id").references("id").inTable("subjects").onDelete("cascade");
   });
 };
 
