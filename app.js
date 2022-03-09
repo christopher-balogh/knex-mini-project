@@ -2,11 +2,12 @@ const express = require('express');
 const morgan = require('morgan');
 
 const app = express();
-const knex = require('knex')(require('./knexfile.js')[process.env.NODE_ENV || "development"]);
 
+const knex = require('knex')(require('./knexfile.js')[process.env.NODE_ENV || "development"]);
 
 app.use(morgan("tiny"));
 app.use(express.json());
+
 
 app.get('/books', function(req, res) {
   knex
