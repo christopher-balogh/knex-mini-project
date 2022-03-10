@@ -19,8 +19,8 @@ In order to use this as a developer you will need to create a .env file and set 
 CONNECTION_STRING="postgres://USER_NAME:USER_PASSWORD@localhost/DATABASE_NAME"  
 
 knex file should include:  
-  development: {
-    client: 'postgresql',
-    connection: process.env.CONNECTION_STRING,
-    // connection: 'postgres://postgres:docker@localhost:5432/books'
-  },
+  development: {  
+    client: 'postgresql',  
+    connection: process.env.CONNECTION_STRING,  
+  },  
+
