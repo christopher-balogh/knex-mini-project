@@ -14,7 +14,7 @@ Morgan
 
 In order to use this as a developer you will need to create a .env file and set the "CONNECTION_STRING=" equal to the location of your database. Then you will want to set the connection key in the knex file to point to the connection string.  
 
-#### For example: 
+##### For example: 
 .env file should include:  
 CONNECTION_STRING="postgres://USER_NAME:USER_PASSWORD@localhost/DATABASE_NAME"  
 
@@ -24,3 +24,5 @@ knex file should include:
     connection: process.env.CONNECTION_STRING,  
   },  
 
+#### Endpoints  
+You can view all entries at /books, /authors, or /subjects. You can also perform a search by id. Ex..'/books/:id"
