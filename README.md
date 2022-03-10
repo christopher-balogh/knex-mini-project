@@ -25,4 +25,6 @@ knex file should include:
   },  
 
 #### Endpoints  
-You can view all entries at /books, /authors, or /subjects. You can also perform a search by id. Ex..'/books/:id"
+You can view all entries at /books, /authors, or /subjects. You can also perform a search or update an entry, or delete an entry by including the id in the address. Ex..'/books/:id"
+
+
