@@ -5,7 +5,7 @@ This diagram shows the relations of the tables.
 ![image](https://user-images.githubusercontent.com/96319959/157544712-b1fa6a8c-01a0-44c1-9327-9b97cc48e490.png)
 
 
-###Dependencies:  
+### Dependencies:  
 Express  
 Postgres SQL  
 Knex  
