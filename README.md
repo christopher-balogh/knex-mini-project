@@ -12,5 +12,15 @@ Knex
 Morgan  
 .env  
 
-In order to use this as a developer you will need to create a .env file and set the "CONNECTION_STRING=" equal to the location of your database.
-For example ""
+In order to use this as a developer you will need to create a .env file and set the "CONNECTION_STRING=" equal to the location of your database. Then you will want to set the connection key in the knex file to point to the connection string.  
+
+#### For example: 
+.env file should include:  
+CONNECTION_STRING="postgres://USER_NAME:USER_PASSWORD@localhost/DATABASE_NAME"  
+
+knex file should include:  
+  development: {
+    client: 'postgresql',
+    connection: process.env.CONNECTION_STRING,
+    // connection: 'postgres://postgres:docker@localhost:5432/books'
+  },
